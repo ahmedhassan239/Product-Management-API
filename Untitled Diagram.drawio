@@ -1,9 +1,45 @@
 <mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36" version="24.7.7">
-  <diagram name="Page-1" id="IbDYLz_FtOZPkr4BBcO1">
-    <mxGraphModel>
+  <diagram name="System Design" id="IbDYLz_FtOZPkr4BBcO1">
+    <mxGraphModel dx="743" dy="465" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
+        <mxCell id="FJZm7wR0MAfK1-O7vOgf-1" value="Client" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="40" y="40" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="FJZm7wR0MAfK1-O7vOgf-2" value="User Management API" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="240" y="40" width="160" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="FJZm7wR0MAfK1-O7vOgf-3" value="Product Management API" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="240" y="140" width="160" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="FJZm7wR0MAfK1-O7vOgf-4" value="MySQL Database" style="shape=cylinder;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="240" y="260" width="160" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="FJZm7wR0MAfK1-O7vOgf-5" value="POST /users/register&#xa;&#xa;POST /users/login&#xa;&#xa;GET /users/{id}&#xa;&#xa;PUT /users/{id}&#xa;&#xa;DELETE /users/{id}" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="420" width="250" height="140" as="geometry" />
+        </mxCell>
+        <mxCell id="FJZm7wR0MAfK1-O7vOgf-6" value="POST /products&#xa;&#xa;GET /products/{id}&#xa;&#xa;PUT /products/{id}&#xa;&#xa;DELETE /products/{id}" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="450" y="180" width="250" height="130" as="geometry" />
+        </mxCell>
+        <mxCell id="FJZm7wR0MAfK1-O7vOgf-7" edge="1" parent="1" source="FJZm7wR0MAfK1-O7vOgf-1" target="FJZm7wR0MAfK1-O7vOgf-2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="FJZm7wR0MAfK1-O7vOgf-8" edge="1" parent="1" source="FJZm7wR0MAfK1-O7vOgf-1" target="FJZm7wR0MAfK1-O7vOgf-3">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="FJZm7wR0MAfK1-O7vOgf-9" edge="1" parent="1" source="FJZm7wR0MAfK1-O7vOgf-2" target="FJZm7wR0MAfK1-O7vOgf-4">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="FJZm7wR0MAfK1-O7vOgf-10" edge="1" parent="1" source="FJZm7wR0MAfK1-O7vOgf-3" target="FJZm7wR0MAfK1-O7vOgf-4">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="FJZm7wR0MAfK1-O7vOgf-11" edge="1" parent="1" source="FJZm7wR0MAfK1-O7vOgf-2" target="FJZm7wR0MAfK1-O7vOgf-5">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="FJZm7wR0MAfK1-O7vOgf-12" edge="1" parent="1" source="FJZm7wR0MAfK1-O7vOgf-3" target="FJZm7wR0MAfK1-O7vOgf-6">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
       </root>
     </mxGraphModel>
   </diagram>
