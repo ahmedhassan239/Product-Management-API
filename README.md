@@ -9,6 +9,7 @@ This is a Product Management API built with Laravel, providing user authenticati
 - [Design Diagram](#design-diagram)
 - [Postman Collection](#postman-collection)
 - [Usage](#usage)
+- [Unit Testing](#unit-testing)
 - [Endpoints](#endpoints)
 
 ## Project Setup
@@ -54,10 +55,11 @@ To get started with the project, follow the steps below:
     ```bash
     php artisan key:generate
     ```
+
 5. **Generate JWT Key:**
     ```bash
     php artisan jwt:secret
-
+    ```
 
 6. **Run Migrations:**
     ```bash
